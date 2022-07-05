@@ -1,3 +1,7 @@
+name : First Workflow
+
+on : push
+
 jobs: 
   my-frist-ci: 
     name: "First Job"
