@@ -4,10 +4,10 @@ on: push
 
 jobs: 
   Python CI Jobs:
-            -CI Jobs:
-                  -name: Checkout Codes
-                   uses: actions/checkout@v3
-                  -name: Install Dependencies
-                   run: pipinstall -r requirements.txt 
-                  -name: Test Code
-                   run: pytest
+            - CI Jobs:
+                  - name: Checkout Codes
+                    uses: actions/checkout@v3
+                  - name: Install Dependencies
+                    run: pipinstall -r requirements.txt 
+                  - name: Test Code
+                    run: pytest
