@@ -10,6 +10,6 @@ jobs:
                 - name: Checkout Codes
                   uses: actions/checkout@v3
                 - name: Install Dependencies
-                  run: pipinstall -r requirements.txt 
+                  run: pip install -r requirements.txt 
                 - name: Test Code
                   run: pytest
