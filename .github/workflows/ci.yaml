@@ -3,11 +3,13 @@ name: CI Workflow
 on: push
 
 jobs: 
-  Python-CI-Jobs:
-            - CI Jobs:
-                  - name: Checkout Codes
-                    uses: actions/checkout@v3
-                  - name: Install Dependencies
-                    run: pipinstall -r requirements.txt 
-                  - name: Test Code
-                    run: pytest
+  Python-CI-Job:
+            name: Python-CI-Job
+            runs-on: ubuntu-latest
+            steps:
+                - name: Checkout Codes
+                  uses: actions/checkout@v3
+                - name: Install Dependencies
+                  run: pipinstall -r requirements.txt 
+                - name: Test Code
+                  run: pytest
