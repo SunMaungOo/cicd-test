@@ -1,17 +1,13 @@
-name : First Workflow
+name: CI Workflow
 
-on : push
+on: push
 
 jobs: 
-  my-frist-ci: 
-    name: "First Job"
-    runs-on: ubuntu-latest
-    steps: 
-      - 
-        name: "Checkout code"
-        uses: actions/checkout@v2
-      -
-        name: "Test Code"
-        run: | 
-            pip install -r requirements.txt
-            pytest
+  Python CI Jobs:
+            -CI Jobs:
+                  -name: Checkout Codes
+                   uses: actions/checkout@v3
+                  -name: Install Dependencies
+                   run: pipinstall -r requirements.txt 
+                  -name: Test Code
+                   run: pytest
