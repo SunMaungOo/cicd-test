@@ -11,6 +11,5 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Show current directory
-        run: |
-        echo 'hello'
+        run:  pwd
 
