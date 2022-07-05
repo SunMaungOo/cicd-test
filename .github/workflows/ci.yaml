@@ -1,15 +1,14 @@
-name : First Workflow
-
-on : push
-
-jobs:
-  my-frist-ci:
-    name: First Job
+jobs: 
+  my-frist-ci: 
+    name: "First Job"
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
+    steps: 
+      - 
+        name: "Checkout code"
         uses: actions/checkout@v2
-
-      - name: Show current directory
-        run:  pwd
-
+      - 
+        name: "Show current directory"
+        run: |
+            pwd
+            ls
+            python --verion
