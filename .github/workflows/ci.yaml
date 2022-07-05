@@ -3,7 +3,7 @@ name: CI Workflow
 on: push
 
 jobs: 
-  Python CI Jobs:
+  Python-CI-Jobs:
             - CI Jobs:
                   - name: Checkout Codes
                     uses: actions/checkout@v3
