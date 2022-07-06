@@ -18,7 +18,7 @@ jobs:
                 - name: List file in dir
                   run: ls -l
                 - name: Upload file
-                  run: actions/upload-artifact@v3
+                  uses: actions/upload-artifact@v3
                   with:
                      name: program
                      path: dist/* 
