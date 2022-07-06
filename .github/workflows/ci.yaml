@@ -15,5 +15,5 @@ jobs:
                   run: pytest
                 - name: Build program
                   run: pyinstaller main.py
-                - name : Print dir
-                  run: pwd
+                - name : List file in dir
+                  run: ls -l 
