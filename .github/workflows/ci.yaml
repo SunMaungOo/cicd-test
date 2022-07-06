@@ -13,3 +13,7 @@ jobs:
                   run: pip install -r requirements.txt 
                 - name: Test Code
                   run: pytest
+                - name: Build program
+                  run: pyinstaller
+                - name : Print dir
+                  run: pwd
