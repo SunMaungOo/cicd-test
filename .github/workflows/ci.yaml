@@ -12,13 +12,17 @@ jobs:
                 - name: Install Dependencies
                   run: pip install -r requirements.txt 
                 - name: Test Code
-                  run: pytest
+                  run: |
+                   cd src
+                   pytest
                 - name: Build program
-                  run: pyinstaller main.py
+                  uses: JackMcKew/pyinstaller-action-windows@main
+                  with:
+                   path: src
                 - name: List file in dir
                   run: ls -l
                 - name: Upload file
                   uses: actions/upload-artifact@v3
                   with:
                      name: program
-                     path: dist/* 
+                     path: src/dist/* 
